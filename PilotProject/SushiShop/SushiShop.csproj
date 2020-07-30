@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="ParolLibrary">
-      <HintPath>..\ParolLibrary\bin\Debug\netstandard2.0\ParolLibrary.dll</HintPath>
+    <Reference Include="PasswordLibrary">
+      <HintPath>..\PasswordLibrary\bin\Debug\netstandard2.0\PasswordLibrary.dll</HintPath>
     </Reference>
   </ItemGroup>
 

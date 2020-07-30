@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ParolLibrary;
+using PasswordLibrary;
 
 namespace SushiShop
 {
@@ -16,13 +16,13 @@ namespace SushiShop
             ConsoleKeyInfo text;
             Console.WriteLine("Do You have already Order _Y,_N?");
             text = Console.ReadKey();
-            if (text.Key == ConsoleKey.Y)
+            if (text.Key == ConsoleKey.N)
             {
                 Console.WriteLine(); 
             }
-            if (text.Key == ConsoleKey.N)
+            if (text.Key == ConsoleKey.Y)
             {
-                Parol parol = new Parol(); 
+                Password parol = new Password(); 
                 parol.input_password();
                 Console.ReadLine();
             }          
