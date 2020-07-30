@@ -25,7 +25,12 @@ namespace SushiShop
                 Parol parol = new Parol(); 
                 parol.input_password();
                 Console.ReadLine();
-            }
+            }          
+        }
+        public void Menu()
+        {
+            Console.WriteLine("Dou You want Gunkani _G or Nigiri_N ?");
+
         }
     }
 }

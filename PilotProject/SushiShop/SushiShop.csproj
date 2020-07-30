@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodeBot\CodeBot.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="ParolLibrary">
       <HintPath>..\ParolLibrary\bin\Debug\netstandard2.0\ParolLibrary.dll</HintPath>
     </Reference>

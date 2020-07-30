@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBot", "CodeBot\CodeBot.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SushiShop", "SushiShop\SushiShop.csproj", "{B6672F24-FE18-42F5-838B-42363BED5E0B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParolLibrary", "ParolLibrary\ParolLibrary.csproj", "{D90A31AE-D193-4978-894B-BB5269EA79AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordLibrary", "PasswordLibrary\PasswordLibrary.csproj", "{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{B6672F24-FE18-42F5-838B-42363BED5E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6672F24-FE18-42F5-838B-42363BED5E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6672F24-FE18-42F5-838B-42363BED5E0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D90A31AE-D193-4978-894B-BB5269EA79AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D90A31AE-D193-4978-894B-BB5269EA79AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D90A31AE-D193-4978-894B-BB5269EA79AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D90A31AE-D193-4978-894B-BB5269EA79AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
