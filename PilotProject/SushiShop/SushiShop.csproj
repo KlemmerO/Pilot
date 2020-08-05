@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Test\JsonLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Menu">
+      <HintPath>..\Menu\bin\Debug\netcoreapp3.1\Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PasswordLibrary">
       <HintPath>..\PasswordLibrary\bin\Debug\netstandard2.0\PasswordLibrary.dll</HintPath>
     </Reference>

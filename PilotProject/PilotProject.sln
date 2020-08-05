@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBot", "CodeBot\CodeBot.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SushiShop", "SushiShop\SushiShop.csproj", "{B6672F24-FE18-42F5-838B-42363BED5E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordLibrary", "PasswordLibrary\PasswordLibrary.csproj", "{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordLibrary", "PasswordLibrary\PasswordLibrary.csproj", "{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu\Menu.csproj", "{CC791E96-7678-4779-843D-20B6DFD839BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B42597A3-6CC7-4DD4-BFA8-977F52CC85FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC791E96-7678-4779-843D-20B6DFD839BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC791E96-7678-4779-843D-20B6DFD839BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC791E96-7678-4779-843D-20B6DFD839BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC791E96-7678-4779-843D-20B6DFD839BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

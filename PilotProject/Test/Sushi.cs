@@ -1,27 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Runtime.Serialization;
+
 
 namespace JsonLibrary
 {
-    [Serializable]
     public class Sushi
     {
+        public string Type { get; set; }
         public int SushiNr { get; set; }
         public string SushiName { get; set; }
         public double Price { get; set; }
-        public string Ingridient { get; set; }        
-        public Type Type { get; set; }        
-        public Sushi(int sushiNr, string sushiName, double price, string ingridient)
-        {
-            SushiNr = sushiNr;
-            SushiName = sushiName;
-            Price = price;
-            Ingridient = ingridient;
-        }
-        public override string ToString()
-        {
-            return SushiName;
-        }
+        public bool Rice { get; set; }
+        public bool Fish { get; set; }
+        public List<string> Ingridient { get; set; }
+        public IList<Sushi> _sushi { get; set; }
     }
 }
+  
