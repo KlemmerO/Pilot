@@ -10,7 +10,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Text.Json.Serialization;
 using Menu;
-using System.Windows.Forms;
 using Newtonsoft.Json.Schema;
 
 namespace SushiShop
@@ -30,32 +29,33 @@ namespace SushiShop
             }
             if (text.Key == ConsoleKey.Y)
             {
-                Password parol = new Password(); 
+                Password parol = new Password();
                 parol.input_password();
                 Console.ReadLine();
-            }          
+            }
         }
         public static void Menu()
-        {
-            string jsonFromFile;
-
-            Console.WriteLine();
+        {    
+            
+            Console.WriteLine();           
             ConsoleKeyInfo answer;
-            Console.WriteLine("Dou You want Gunkani _G or Nigiri_N ?");
+            Console.WriteLine("Dou You want Gunkani _G or Nigiri_N ?");            
             answer = Console.ReadKey();
             if (answer.Key == ConsoleKey.G)
             {
-                ReadOnly read = new ReadOnly();
-                using (var reader = new StreamReader(_path))
-                {
-                    jsonFromFile = reader.ReadToEnd();
-                }
-
-            }            
-        }
-        public class ReadOnly
-        {
-            private readonly string _path = $"C:\\Users\\Olga.Notebook_Olga\\source\\Repos\\KlemmerO\\Pilot\\PilotProject\\Test\\bin\\Debug\\netcoreapp3.1\\SushiLibrary.json";                           
-        }
-    }
+                Console.WriteLine();
+                ReadJson read = new ReadJson();
+                read.ConditionG();
+                Console.WriteLine();             
+            }
+            if (answer.Key == ConsoleKey.N)
+            {
+                Console.WriteLine();
+                Alternative alternativ = new Alternative();
+                alternativ.ConditionN();
+                Console.WriteLine();
+            }
+        }          
+    }    
 }
+

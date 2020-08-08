@@ -5,17 +5,22 @@ using System.Runtime.Serialization;
 
 
 namespace JsonLibrary
-{
-    public class Sushi
+{  
+    public class Sushi 
     {
         public string Type { get; set; }
         public int SushiNr { get; set; }
-        public string SushiName { get; set; }
         public double Price { get; set; }
+        public string SushiName { get; set; }
         public bool Rice { get; set; }
         public bool Fish { get; set; }
-        public List<string> Ingridient { get; set; }
-        public IList<Sushi> _sushi { get; set; }
+
+    }
+    public class Selection
+    {
+        public int TotalCount { get; set; }
+        public List<Sushi> Sushi { get; set; }
     }
 }
+
   
