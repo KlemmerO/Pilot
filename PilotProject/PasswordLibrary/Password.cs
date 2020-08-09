@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace PasswordLibrary
 {
     public class Password
-    {
-
+    {       
         public void input_password()
-        {
+        {            
             string str;
             Console.WriteLine("please, input passowrd");
             str = Console.ReadLine();
@@ -18,9 +17,11 @@ namespace PasswordLibrary
             {
                 Console.WriteLine("Not existent Name");
             }
-            else if (str == "admin")
+         //   SuShiShop.Program shop = new SuShiShop.Program();
+        //    main.Menu();
+       //     else if (str == id)
             {
-                Console.WriteLine("Unlocked");
+      //          Console.WriteLine("Unlocked");
             }
         }
 

@@ -53,9 +53,14 @@ namespace SushiShop
                 Console.WriteLine();
                 Alternative alternativ = new Alternative();
                 alternativ.ConditionN();
-                Console.WriteLine();
+                Console.WriteLine();                
             }
-        }          
+            Console.WriteLine("Your booking are sucsessful done!");
+            Console.WriteLine("Write Your Name and Surname- it will be Yours password.Press after input enter");
+            Console.ReadLine();
+          //  input_password(out id);
+        }   
+        
     }    
 }
 

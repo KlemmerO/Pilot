@@ -51,7 +51,7 @@ namespace SushiShop
                           select new { Type = Sushi.Type, Number = Sushi.SushiNr };
 
             foreach (var p in gunkani)
-              Console.WriteLine($"{p.Type}, Number of order - {p.Number}");
+            Console.WriteLine($"{p.Type}, Number of order - {p.Number}");
             Console.WriteLine();
             Console.WriteLine("Do You want with fish _Y or no _N ?");
             ConsoleKeyInfo details;
@@ -61,20 +61,36 @@ namespace SushiShop
                 Console.WriteLine();
                 var fish = from Sushi in Sushis
                            where Sushi.Fish == true
-                           select new { Type = Sushi.Type, Number = Sushi.SushiNr };
+                           select new { Type = Sushi.Type, Number = Sushi.SushiNr, Name = Sushi.SushiName, Price = Sushi.Price };
                 foreach (var f in fish)
-                    Console.WriteLine($"{f.Type}, Number of order - {f.Number}");
-            }
+                    Console.WriteLine($"{f.Type}, Number of order - {f.Number},Name of dish - {f.Name}, Price - {f.Price}");
+            }           
             if (details.Key == ConsoleKey.N)
             {
+
                 Console.WriteLine();
                 var caviar = from Sushi in Sushis
                              where Sushi.Type == "Gunkani"
                              where Sushi.Fish == false
-                             select new { Type = Sushi.Type, Number = Sushi.SushiNr };
+                             select new { Type = Sushi.Type, Number = Sushi.SushiNr, Name = Sushi.SushiName, Price = Sushi.Price };                            
                 foreach (var n in caviar)
-                    Console.WriteLine($"{n.Type}, Number of order - {n.Number}");
+                Console.WriteLine($"{n.Type}, Number of order - {n.Number},Name of dish - {n.Name}, ref Price - {n.Price}");
+             //   string ref Price = chislo;
+
+  
+                var caviar2 = from Sushi in Sushis
+                              where Sushi.Type == "Gunkani"
+                              where Sushi.Fish == false
+                              select new { Price = Sushi.Price } ;  
+                
+                    
             }
+        
+         Console.WriteLine("What amount of sushi do You want?");
+        ConsoleKeyInfo summa;
+         summa = Console.ReadKey();         
+     //    float result;
+       //  result = summa * Price  ;
         }
     }    
 }
